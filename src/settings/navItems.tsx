@@ -29,3 +29,12 @@ export const navItems: NavItem[] = [
     icon: <RocketLaunchIcon className="w-6 h-6" />,
   },
 ]
+
+export const pathToLabel = (() => {
+  const map = new Map()
+  navItems.forEach(({ label, href }) => {
+    map.set(href, label)
+  })
+
+  return map
+})()
