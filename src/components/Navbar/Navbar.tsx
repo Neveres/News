@@ -17,7 +17,7 @@ const Navbar: React.FC<INavbarProps> = ({ onMenuButtonClick }) => {
           'w-full fixed z-10 px-4 shadow-sm h-14': true,
         })}
       >
-        <div className="font-bold text-lg">
+        <div className="font-bold text-2xl">
           <NewspaperIcon className="h-6 w-6 inline-block mr-2" />
           See what&apos;s new in Taiwan
         </div>
