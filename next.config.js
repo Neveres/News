@@ -1,4 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/business',
+        destination: '/',
+      },
+      {
+        source: '/science',
+        destination: '/',
+      },
+      {
+        source: '/technology',
+        destination: '/',
+      },
+    ]
+  },
+}
