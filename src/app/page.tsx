@@ -7,7 +7,7 @@ import { pathToLabel } from 'src/settings'
 
 export default function Home() {
   const pathname = usePathname()
-  const { news } = useNews()
+  const { news } = useNews(pathname)
 
   const News = useMemo(
     () =>
