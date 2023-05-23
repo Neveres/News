@@ -12,14 +12,14 @@ type News = {
   urlToImage?: string
 }
 
-export const useNews = (category?: string) => {
+export const useNews = (category: string) => {
   const [news, setNews] = useState<News[]>([])
 
   useEffect(() => {
     httpClient
       .get('', {
         params: {
-          category: category ? category : undefined,
+          category: category.slice(1),
         },
       })
       .then((response) => {
