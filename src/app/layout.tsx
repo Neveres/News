@@ -30,9 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="grid min-h-screen grid-rows-header">
-          <div>
-            <Navbar onMenuButtonClick={onMenuButtonClick} />
-          </div>
+          <Navbar onMenuButtonClick={onMenuButtonClick} />
 
           <div className="grid md:grid-cols-sidebar">
             <Sidebar
