@@ -1,3 +1,4 @@
-'use client'
 import Home from '../page'
-export default Home
+export default function Science() {
+  return Home({ pathname: 'science' })
+}
