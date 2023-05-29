@@ -33,7 +33,7 @@ export const navItems: NavItem[] = [
 export const pathToLabel = (() => {
   const map = new Map()
   navItems.forEach(({ label, href }) => {
-    map.set(href, label)
+    map.set(href.slice(1), label)
   })
 
   return map
