@@ -5,10 +5,9 @@ export const getNews = async <TResponse>(
 ): Promise<TResponse> => {
   const params = new URLSearchParams({
     ...defaultParams,
-    category,
+    category: category.slice(1),
   })
   const response = await fetch(`${baseURL}${params}`)
-  console.log(category, `${baseURL}${params}`)
 
   if (!response.ok) {
     throw new Error('Fail to get news')
