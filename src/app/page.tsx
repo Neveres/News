@@ -1,5 +1,5 @@
 import { getNews } from 'src/libraries'
-import { pathToLabel } from 'src/settings'
+import { pathToLabel, navItems } from 'src/settings'
 
 type Article = {
   author: string
@@ -12,7 +12,7 @@ type Article = {
   urlToImage?: string
 }
 
-export default async function Home({ pathname = '' }) {
+export default async function Home({ pathname = navItems[0].href }) {
   const { articles } = await getNews<{
     articles: Article[]
   }>(pathname)
