@@ -1,4 +1,4 @@
-import { navItems } from 'src/settings'
+import { navItems } from '@/config'
 import Home from '../page'
 
 export default function Business() {

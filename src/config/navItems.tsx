@@ -5,7 +5,7 @@ import {
   FireIcon,
   BriefcaseIcon,
 } from '@heroicons/react/24/outline'
-import { NavItem } from 'src/components'
+import { NavItem } from '@/components'
 
 export const navItems: NavItem[] = [
   {

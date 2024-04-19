@@ -1,4 +1,4 @@
-import { baseURL, defaultParams } from 'src/settings'
+import { baseURL, defaultParams } from '@/config'
 
 export const getNews = async <TResponse>(
   category: string,

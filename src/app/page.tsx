@@ -1,5 +1,5 @@
-import { getNews } from 'src/libraries'
-import { pathToLabel, navItems } from 'src/settings'
+import { getNews } from '@/utils'
+import { pathToLabel, navItems } from '@/config'
 
 type Article = {
   author: string
